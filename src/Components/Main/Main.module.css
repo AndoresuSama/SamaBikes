@@ -1,6 +1,7 @@
 .main {
   padding: 36px 0;
   color: var(--color-white);
+  flex: 1 0 auto;
 }
 
 .content {
