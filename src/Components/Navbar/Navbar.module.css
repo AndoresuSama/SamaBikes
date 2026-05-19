@@ -1,13 +1,13 @@
 .navbar {
-  background: linear-gradient(180deg, rgba(0,0,0,0.22), rgba(0,0,0,0.12));
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.04);
+  background: transparent;
+  padding: 0;
+  border-bottom: none;
 }
 
 .list {
   display: flex;
   gap: 18px;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   list-style: none;
   margin: 0;

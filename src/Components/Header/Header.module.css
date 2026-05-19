@@ -1,23 +1,36 @@
 .header {
-  padding: 28px 0;
+  padding: 20px 28px;
   background: var(--accent-gradient);
   color: var(--color-white);
-  text-align: center;
   border-bottom: 2px solid rgba(0,0,0,0.25);
   position: relative;
   overflow: hidden;
 }
 
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand {
+  text-align: left;
+}
+
 .title {
-  font-size: 1.75rem;
-  letter-spacing: 1px;
+  font-size: 1.85rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .subtitle {
-  margin-top: 6px;
+  margin: 8px 0 0;
   font-size: 0.95rem;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255,255,255,0.88);
   opacity: 0.95;
 }
 
@@ -28,4 +41,21 @@
   background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.04));
   mix-blend-mode: overlay;
   pointer-events: none;
+}
+
+@media (max-width: 860px) {
+  .inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .brand {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+
+  .list {
+    justify-content: center;
+  }
 }
