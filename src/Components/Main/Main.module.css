@@ -1,0 +1,12 @@
+.main {
+  padding: 36px 0;
+  color: var(--color-white);
+}
+
+.content {
+  display: block;
+  animation: float-up 420ms ease;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  border-radius: 8px;
+  padding: 18px;
+}
