@@ -1,0 +1,69 @@
+{
+  "bikes": [
+    {
+      "id": "000",
+      "name": "Yamaha MT-07 ABS",
+      "price": "$1.350.000",
+      "image": "/assets/yamaha_mt07.jpg",
+      "description": "Motos naked con motor de 689 cc, diseño ágil y respuesta deportiva ideal para ciudad y ruta."
+    },
+    {
+      "id": "001",
+      "name": "KTM 390 Duke",
+      "price": "$2.490.000",
+      "image": "/assets/KTM_390.jpg",
+      "description": "Compacta y ligera, con banca de 373 cc, excelente para quienes buscan precisión en curvas y performance ágil."
+    },
+    {
+      "id": "002",
+      "name": "Bajaj Dominar 400",
+      "price": "$1.090.000",
+      "image": "/assets/dominar_400.jpg",
+      "description": "Deportivo touring de 373 cc con buena autonomía, posición de manejo cómoda y estilo de ruta moderna."
+    }
+  ],
+  "equipment": [
+    {
+      "id": "003",
+      "name": "Casco Integral Nexo",
+      "price": "$28.500",
+      "image": "/assets/casco_integral_nexo.jpg",
+      "description": "Casco integral con ventilación avanzada, visor antirrayado y diseño aerodinámico para máxima seguridad."
+    },
+    {
+      "id": "004",
+      "name": "Guantes de cuero",
+      "price": "$9.200",
+      "image": "/assets/guantes_cuero_moto.jpg",
+      "description": "Guantes de cuero reforzado con protecciones en nudillos y palma antideslizante para confort en ruta."
+    },
+    {
+      "id": "005",
+      "name": "Campera moto impermeable",
+      "price": "$42.000",
+      "image": "/assets/campera_moto_impermeable.jpg",
+      "description": "Chaqueta técnica con membrana impermeable, protecciones internas y costuras selladas para clima variable."
+    },
+    {
+      "id": "006",
+      "name": "Candado de disco",
+      "price": "$6.800",
+      "image": "/assets/Candado_para_Disco.jpg",
+      "description": "Candado de disco resistente y compacto, con cuerpo endurecido y llave de seguridad para protección urbana."
+    },
+    {
+      "id": "007",
+      "name": "Soporte móvil para celular",
+      "price": "$3.400",
+      "image": "/assets/soporte_movil.jpg",
+      "description": "Soporte ajustable con sujeción segura y rotación 360°, perfecto para usar GPS durante los viajes."
+    },
+    {
+      "id": "008",
+      "name": "Botas de ruta",
+      "price": "$31.000",
+      "image": "/assets/botas_de_ruta.jpg",
+      "description": "Botas de ruta con suela antideslizante, refuerzos laterales y aislamiento para proteger en cualquier clima."
+    }
+  ]
+}

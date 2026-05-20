@@ -33,3 +33,33 @@
   background: rgba(255,255,255,0.04);
   border: 1px solid rgba(255,255,255,0.08);
 }
+
+.person {
+  margin-top: 18px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.personName {
+  margin: 0 0 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-white);
+}
+
+.personRole {
+  margin: 0 0 10px;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.95rem;
+}
+
+.personLink {
+  display: block;
+  color: var(--color-red-2);
+  text-decoration: none;
+  margin-top: 5px;
+}
+
+.error {
+  color: #ffcccb;
+}

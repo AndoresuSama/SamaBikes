@@ -17,8 +17,7 @@ export const ProductDetails = ({ product, onBack }) => {
           <h2 className={styles.title}>{product.name}</h2>
           <p className={styles.price}>{product.price}</p>
           <p className={styles.description}>
-            Esta es la vista detallada del producto. Aquí podrás ver más información sobre especificaciones,
-            características y recomendaciones de uso.
+            {product.description || 'Esta es la vista detallada del producto. Aquí podrás ver más información sobre especificaciones, características y recomendaciones de uso.'}
           </p>
           <div className={styles.meta}>
             <span>Disponible para prueba</span>

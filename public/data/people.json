@@ -1,0 +1,23 @@
+[
+  {
+    "id": "rep-01",
+    "name": "Lucas Rojas",
+    "role": "Asesor de Motos",
+    "email": "lucas.rojas@samabikes.com",
+    "phone": "+54 9 11 6789 1234"
+  },
+  {
+    "id": "rep-02",
+    "name": "María Paz Gómez",
+    "role": "Especialista en Accesorios",
+    "email": "maria.gomez@samabikes.com",
+    "phone": "+54 9 11 5678 4321"
+  },
+  {
+    "id": "rep-03",
+    "name": "Tomás Herrera",
+    "role": "Atención Personalizada",
+    "email": "tomas.herrera@samabikes.com",
+    "phone": "+54 9 11 3456 7890"
+  }
+]

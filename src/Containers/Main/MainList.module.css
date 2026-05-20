@@ -1,0 +1,54 @@
+.mainList {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.section {
+  padding: 24px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.sectionHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 22px;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.sectionText {
+  margin: 0;
+  color: rgba(255,255,255,0.75);
+}
+
+.gallery {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.status,
+.statusError {
+  border-radius: 16px;
+  padding: 18px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.status {
+  background: rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.95);
+}
+
+.statusError {
+  background: rgba(196, 0, 0, 0.14);
+  color: #ffecec;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Main.module.css';
-import { BikesListContainer } from '../Bikes/BikesListContainer';
-import { EquipmentListContainer } from '../Equipment/EquipmentListContainer';
+import { MainListContainer } from './MainListContainer';
+import { Contact } from '../Contact/Contact';
 
 export const Main = ({ children, onAddToCart, onRemoveFromCart, onSelectProduct }) => {
   return (
@@ -17,8 +17,8 @@ export const Main = ({ children, onAddToCart, onRemoveFromCart, onSelectProduct 
                 Elige entre las mejores motos y el equipamento que no puede faltar en tu ruta.
               </p>
             </div>
-            <BikesListContainer onAddToCart={onAddToCart} onRemoveFromCart={onRemoveFromCart} onSelectProduct={onSelectProduct} />
-            <EquipmentListContainer onAddToCart={onAddToCart} onRemoveFromCart={onRemoveFromCart} onSelectProduct={onSelectProduct} />
+            <MainListContainer onAddToCart={onAddToCart} onRemoveFromCart={onRemoveFromCart} onSelectProduct={onSelectProduct} />
+            <Contact />
           </section>
         )}
       </div>
