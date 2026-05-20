@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -7,11 +8,61 @@
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 16px 40px rgba(0,0,0,0.35);
   transition: transform var(--transition-fast) ease, border-color var(--transition-fast) ease;
+  cursor: pointer;
 }
 
 .card:hover {
   transform: translateY(-6px);
   border-color: rgba(255,255,255,0.16);
+}
+
+.favoriteButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.18);
+  color: var(--color-red);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+  transition: background var(--transition-fast) ease, transform var(--transition-fast) ease, border-color var(--transition-fast) ease, color var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+}
+
+.favoriteButton:hover,
+.favoriteButton:focus-visible {
+  background: rgba(255,255,255,0.35);
+  border-color: rgba(255,255,255,0.95);
+  color: var(--color-red);
+  transform: scale(1.1);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+
+.favoriteButton:focus {
+  outline: none;
+}
+
+.favoriteActive {
+  background: var(--color-red);
+  border-color: var(--color-red);
+  color: #fff;
+  box-shadow: 0 14px 30px rgba(196, 0, 0, 0.35);
+}
+
+.favoriteActive:focus-visible {
+  box-shadow: 0 0 0 3px rgba(255,255,255,0.35), 0 14px 30px rgba(196, 0, 0, 0.35);
+}
+
+.favoriteActive:hover {
+  background: #c40000;
+  border-color: #c40000;
 }
 
 .image {
@@ -38,7 +89,13 @@
   letter-spacing: 0.02em;
 }
 
-.button {
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.cartButton {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -50,15 +107,44 @@
   background: var(--accent-gradient);
   color: var(--color-white);
   cursor: pointer;
-  transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+  transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease, background var(--transition-fast) ease;
 }
 
-.button:hover {
+.cartButton:hover {
   transform: translateY(-2px);
   box-shadow: 0 12px 24px rgba(212,0,0,0.18);
 }
 
-.button:focus-visible {
-  outline: 2px solid rgba(255,255,255,0.32);
-  outline-offset: 3px;
+.quantityControl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  border-radius: 14px;
+  background: rgba(255,255,255,0.08);
+  padding: 4px;
+}
+
+.quantityButton {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255,255,255,0.1);
+  color: var(--color-white);
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background var(--transition-fast) ease, transform var(--transition-fast) ease;
+}
+
+.quantityButton:hover {
+  background: rgba(255,255,255,0.18);
+  transform: translateY(-1px);
+}
+
+.quantityLabel {
+  min-width: 48px;
+  text-align: center;
+  color: var(--color-white);
+  font-weight: 700;
 }

@@ -89,6 +89,16 @@
 	color: rgba(255,255,255,0.8);
 }
 
+.sectionHeader h3 {
+	margin: 0;
+	font-size: 1.3rem;
+	color: rgba(255,255,255,0.95);
+}
+
+.featuredBlock {
+	margin-bottom: 32px;
+}
+
 .productGallery {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(0, 1fr));

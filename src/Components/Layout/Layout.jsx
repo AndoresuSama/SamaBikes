@@ -1,14 +1,14 @@
 import React from 'react';
 import { Header } from '../Header/Header';
-import { Main } from '../Main/Main';
+import { Main } from '../../Containers/Main/Main';
 import { Footer } from '../Footer/Footer';
 import styles from './Layout.module.css';
 
-export const Layout = ({ children }) => {
+export const Layout = ({ children, cartCount, onAddToCart, onRemoveFromCart, onSelectProduct }) => {
   return (
     <div className={styles.layout}>
-      <Header />
-      <Main>{children}</Main>
+      <Header cartCount={cartCount} />
+      <Main onAddToCart={onAddToCart} onRemoveFromCart={onRemoveFromCart} onSelectProduct={onSelectProduct}>{children}</Main>
       <Footer />
     </div>
   );

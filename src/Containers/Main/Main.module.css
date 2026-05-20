@@ -1,0 +1,36 @@
+.main {
+  padding: 36px 0;
+  color: var(--color-white);
+  flex: 1 0 auto;
+}
+
+.content {
+  display: block;
+  animation: float-up 420ms ease;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+  border-radius: 8px;
+  padding: 18px;
+}
+
+.featuredSection {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 18px 0 0;
+}
+
+.featuredHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.featuredTitle {
+  margin: 0;
+  font-size: 1.9rem;
+}
+
+.featuredDescription {
+  margin: 0;
+  color: rgba(255,255,255,0.8);
+}
