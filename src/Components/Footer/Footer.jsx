@@ -1,5 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
+import { PEOPLE_JSON_URL } from '../../utils/catalog';
 import styles from './Footer.module.css';
+
+const {
+  footer,
+  content,
+  brand,
+  logo,
+  contact,
+  contactTitle,
+  link,
+  teamSection,
+  teamTitle,
+  teamGrid,
+  teamCard,
+  personName,
+  personRole,
+  personLink,
+  copy,
+} = styles;
 
 export const Footer = () => {
   const [people, setPeople] = useState([]);
@@ -7,7 +26,7 @@ export const Footer = () => {
   useEffect(() => {
     const loadPeople = async () => {
       try {
-        const response = await fetch('/data/people.json');
+        const response = await fetch(PEOPLE_JSON_URL);
         if (!response.ok) {
           return;
         }
@@ -22,34 +41,42 @@ export const Footer = () => {
   }, []);
 
   return (
-    <footer className={styles.footer}>
-      <div className={styles.content}>
-        <div className={styles.brand}>
-          <span className={styles.logo}>SamaBikes</span>
+    <footer className={footer}>
+      <div className={content}>
+        <div className={brand}>
+          <span className={logo}>SamaBikes</span>
           <p>Tu destino de motocicletas.</p>
         </div>
-        <div className={styles.contact}>
-          <p className={styles.contactTitle}>Contacto</p>
-          <a className={styles.link} href="mailto:contacto@samabikes.com">contacto@samabikes.com</a>
-          <a className={styles.link} href="https://www.instagram.com" target="_blank" rel="noreferrer">@samabikes</a>
+        <div className={contact}>
+          <p className={contactTitle}>Contacto</p>
+          <a className={link} href="mailto:contacto@samabikes.com">
+            contacto@samabikes.com
+          </a>
+          <a className={link} href="https://www.instagram.com" target="_blank" rel="noreferrer">
+            @samabikes
+          </a>
         </div>
       </div>
 
-      <div className={styles.teamSection}>
-        <h4 className={styles.teamTitle}>Nuestros asesores</h4>
-        <div className={styles.teamGrid}>
+      <div className={teamSection}>
+        <h4 className={teamTitle}>Nuestros asesores</h4>
+        <div className={teamGrid}>
           {people.map((person) => (
-            <div key={person.id} className={styles.teamCard}>
-              <p className={styles.personName}>{person.name}</p>
-              <p className={styles.personRole}>{person.role}</p>
-              <a className={styles.personLink} href={`mailto:${person.email}`}>{person.email}</a>
-              <a className={styles.personLink} href={`tel:${person.phone}`}>{person.phone}</a>
+            <div key={person.id} className={teamCard}>
+              <p className={personName}>{person.name}</p>
+              <p className={personRole}>{person.role}</p>
+              <a className={personLink} href={`mailto:${person.email}`}>
+                {person.email}
+              </a>
+              <a className={personLink} href={`tel:${person.phone}`}>
+                {person.phone}
+              </a>
             </div>
           ))}
         </div>
       </div>
 
-      <p className={styles.copy}>&copy; 2026 SamaBikes. Todos los derechos reservados.</p>
+      <p className={copy}>&copy; 2026 SamaBikes. Todos los derechos reservados.</p>
     </footer>
   );
 };

@@ -1,7 +1,7 @@
 .details {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 18px 0 0;
+  padding: 18px 16px 0;
 }
 
 .backButton {
@@ -53,6 +53,49 @@
   margin: 0 0 20px;
   color: rgba(255,255,255,0.82);
   line-height: 1.8;
+}
+
+.cartActions {
+  margin-bottom: 20px;
+}
+
+.addButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 12px;
+  background: var(--accent-gradient);
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+.quantityControl {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.quantityButton {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-white);
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.quantityLabel {
+  min-width: 48px;
+  text-align: center;
+  font-weight: 700;
 }
 
 .meta {

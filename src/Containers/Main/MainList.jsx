@@ -1,45 +1,31 @@
 import { ProductCard } from '../../Components/ProductCard/ProductCard';
 import styles from './MainList.module.css';
 
-export const MainList = ({ bikes, equipment, onAddToCart, onRemoveFromCart, onSelectProduct }) => {
+const { mainList, section, sectionHeader, sectionTitle, sectionText, gallery } = styles;
+
+export const MainList = ({ bikes, equipment }) => {
   return (
-    <div className={styles.mainList}>
-      <section className={styles.section}>
-        <div className={styles.sectionHeader}>
-          <h3 className={styles.sectionTitle}>Motos destacadas</h3>
-          <p className={styles.sectionText}>Una selección de nuestras mejores motos para iniciar tu viaje.</p>
+    <div className={mainList}>
+      <section className={section}>
+        <div className={sectionHeader}>
+          <h3 className={sectionTitle}>Motos destacadas</h3>
+          <p className={sectionText}>Una selección de nuestras mejores motos para iniciar tu viaje.</p>
         </div>
-        <div className={styles.gallery}>
+        <div className={gallery}>
           {bikes.map((bike) => (
-            <ProductCard
-              key={bike.id}
-              name={bike.name}
-              price={bike.price}
-              image={bike.image}
-              onAddToCart={onAddToCart}
-              onRemoveFromCart={onRemoveFromCart}
-              onSelect={() => onSelectProduct(bike)}
-            />
+            <ProductCard key={bike.id} product={bike} />
           ))}
         </div>
       </section>
 
-      <section className={styles.section}>
-        <div className={styles.sectionHeader}>
-          <h3 className={styles.sectionTitle}>Equipamento destacado</h3>
-          <p className={styles.sectionText}>Accesorios clave seleccionados para complementar tu moto.</p>
+      <section className={section}>
+        <div className={sectionHeader}>
+          <h3 className={sectionTitle}>Equipamento destacado</h3>
+          <p className={sectionText}>Accesorios clave seleccionados para complementar tu moto.</p>
         </div>
-        <div className={styles.gallery}>
+        <div className={gallery}>
           {equipment.map((item) => (
-            <ProductCard
-              key={item.id}
-              name={item.name}
-              price={item.price}
-              image={item.image}
-              onAddToCart={onAddToCart}
-              onRemoveFromCart={onRemoveFromCart}
-              onSelect={() => onSelectProduct(item)}
-            />
+            <ProductCard key={item.id} product={item} />
           ))}
         </div>
       </section>

@@ -1,46 +1,24 @@
-import React, { useEffect, useState } from 'react';
+import { useProducts } from '../../hooks/useProducts';
+import { ErrorState } from '../../Components/ui/ErrorState/ErrorState';
+import { LoadingState } from '../../Components/ui/LoadingState/LoadingState';
+import { FEATURED_LIMIT } from '../../utils/catalog';
 import { MainList } from './MainList';
-import styles from './MainList.module.css';
 
-export const MainListContainer = ({ onAddToCart, onRemoveFromCart, onSelectProduct }) => {
-  const [products, setProducts] = useState({ bikes: [], equipment: [] });
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    const loadProducts = async () => {
-      try {
-        const response = await fetch('/data/products.json');
-        if (!response.ok) {
-          throw new Error('No se pudo cargar los productos destacados.');
-        }
-        const data = await response.json();
-        setProducts(data || { bikes: [], equipment: [] });
-      } catch (fetchError) {
-        setError(fetchError.message || 'Error al cargar los productos destacados.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadProducts();
-  }, []);
+export const MainListContainer = () => {
+  const { bikes, equipment, loading, error } = useProducts();
 
   if (loading) {
-    return <div className={styles.status}>Cargando destacados...</div>;
+    return <LoadingState message="Cargando destacados..." />;
   }
 
   if (error) {
-    return <div className={styles.statusError}>{error}</div>;
+    return <ErrorState message={error} />;
   }
 
   return (
     <MainList
-      bikes={products.bikes.slice(0, 3)}
-      equipment={products.equipment.slice(0, 3)}
-      onAddToCart={onAddToCart}
-      onRemoveFromCart={onRemoveFromCart}
-      onSelectProduct={onSelectProduct}
+      bikes={bikes.slice(0, FEATURED_LIMIT)}
+      equipment={equipment.slice(0, FEATURED_LIMIT)}
     />
   );
 };
