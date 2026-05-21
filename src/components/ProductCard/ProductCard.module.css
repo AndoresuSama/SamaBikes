@@ -7,8 +7,20 @@
   background: rgba(255,255,255,0.03);
   border: 1px solid rgba(255,255,255,0.08);
   box-shadow: 0 16px 40px rgba(0,0,0,0.35);
-  transition: transform var(--transition-fast) ease, border-color var(--transition-fast) ease;
+  transition: transform var(--transition-fast) ease, border-color var(--transition-fast) ease, opacity var(--transition-medium) ease;
   cursor: pointer;
+  animation: cardReveal 420ms ease;
+}
+
+@keyframes cardReveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .card:hover {

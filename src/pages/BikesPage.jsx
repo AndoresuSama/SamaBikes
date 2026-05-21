@@ -1,4 +1,4 @@
-import { PageSection } from '../Components/ui/PageSection/PageSection';
+import { PageSection } from '../components/ui/PageSection/PageSection';
 import { BikesListContainer } from '../Containers/Bikes/BikesListContainer';
 
 export function BikesPage() {

@@ -1,4 +1,4 @@
-import { PageSection } from '../Components/ui/PageSection/PageSection';
+import { PageSection } from '../components/ui/PageSection/PageSection';
 import { MainListContainer } from '../Containers/Main/MainListContainer';
 
 export function HomePage() {

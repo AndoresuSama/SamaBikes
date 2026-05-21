@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useCart } from '../hooks/useCart';
 import { ROUTES, productDetailPath } from '../utils/routes';
-import { PageSection } from '../Components/ui/PageSection/PageSection';
+import { PageSection } from '../components/ui/PageSection/PageSection';
 import styles from './CartPage.module.css';
 
 const {

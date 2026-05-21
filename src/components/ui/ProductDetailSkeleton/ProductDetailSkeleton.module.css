@@ -1,0 +1,90 @@
+.details {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 18px 16px 0;
+}
+
+.back {
+  width: 110px;
+  height: 42px;
+  border-radius: 12px;
+  margin-bottom: 22px;
+  background: rgba(255, 255, 255, 0.06);
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 24px;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.image {
+  min-height: 360px;
+  background: rgba(255, 255, 255, 0.06);
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.info {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.line {
+  height: 16px;
+  border-radius: 8px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.05) 0%,
+    rgba(255, 59, 59, 0.18) 45%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s ease-in-out infinite;
+}
+
+.title {
+  width: 72%;
+  height: 28px;
+}
+
+.price {
+  width: 40%;
+}
+
+.text {
+  width: 100%;
+  height: 72px;
+}
+
+.button {
+  width: 180px;
+  height: 44px;
+  border-radius: 12px;
+  margin-top: 8px;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (max-width: 860px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+
+  .image {
+    min-height: 260px;
+  }
+}

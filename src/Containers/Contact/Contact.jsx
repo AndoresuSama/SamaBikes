@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
-import { PEOPLE_JSON_URL } from '../../utils/catalog';
+import { ContactForm } from '../../components/ContactForm/ContactForm';
+import { AdvisorSkeleton } from '../../components/ui/AdvisorSkeleton/AdvisorSkeleton';
+import { usePeople } from '../../hooks/usePeople';
 import styles from './Contact.module.css';
 
 const {
@@ -14,29 +15,10 @@ const {
   personLink,
 } = styles;
 
+const ADVISOR_SKELETON_COUNT = 3;
+
 export const Contact = () => {
-  const [team, setTeam] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [loadError, setLoadError] = useState(null);
-
-  useEffect(() => {
-    const loadTeam = async () => {
-      try {
-        const response = await fetch(PEOPLE_JSON_URL);
-        if (!response.ok) {
-          throw new Error('No se pudo cargar el equipo de ventas.');
-        }
-        const people = await response.json();
-        setTeam(people);
-      } catch (fetchError) {
-        setLoadError(fetchError.message || 'Error al cargar asesores.');
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadTeam();
-  }, []);
+  const { team, loading, error: loadError } = usePeople();
 
   return (
     <section className={section}>
@@ -44,6 +26,9 @@ export const Contact = () => {
         <h2>Contacto</h2>
         <p>¿Listo para tu próxima moto? Hablemos de financiamiento, pruebas de ruta y accesorios personalizados.</p>
       </div>
+
+      <ContactForm />
+
       <div className={contactGrid}>
         <div className={card}>
           <strong>Ubicación:</strong>
@@ -52,7 +37,9 @@ export const Contact = () => {
         <div className={card}>
           <strong>Asesores de atención</strong>
           {loading ? (
-            <p>Cargando asesores...</p>
+            Array.from({ length: ADVISOR_SKELETON_COUNT }, (_, index) => (
+              <AdvisorSkeleton key={`advisor-skeleton-${index}`} />
+            ))
           ) : loadError ? (
             <p className={error}>{loadError}</p>
           ) : (

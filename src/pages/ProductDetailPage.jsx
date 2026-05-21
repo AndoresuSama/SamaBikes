@@ -1,8 +1,8 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { ErrorState } from '../Components/ui/ErrorState/ErrorState';
-import { LoadingState } from '../Components/ui/LoadingState/LoadingState';
-import { PageSection } from '../Components/ui/PageSection/PageSection';
-import { ProductDetails } from '../Components/ProductDetails/ProductDetails';
+import { ErrorState } from '../components/ui/ErrorState/ErrorState';
+import { ProductDetailSkeleton } from '../components/ui/ProductDetailSkeleton/ProductDetailSkeleton';
+import { PageSection } from '../components/ui/PageSection/PageSection';
+import { ProductDetails } from '../components/ProductDetails/ProductDetails';
 import { useProductById } from '../hooks/useProducts';
 
 export function ProductDetailPage() {
@@ -11,11 +11,7 @@ export function ProductDetailPage() {
   const { product, loading, error } = useProductById(id);
 
   if (loading) {
-    return (
-      <PageSection>
-        <LoadingState message="Cargando producto..." />
-      </PageSection>
-    );
+    return <ProductDetailSkeleton />;
   }
 
   if (error) {

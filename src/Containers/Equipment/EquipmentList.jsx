@@ -1,16 +1,23 @@
-import { ProductCard } from '../../Components/ProductCard/ProductCard';
+import { ProductCard } from '../../components/ProductCard/ProductCard';
+import { ProductGallerySkeleton } from '../../components/ui/ProductGallerySkeleton/ProductGallerySkeleton';
 import styles from './EquipmentList.module.css';
 
 const { list, gallery } = styles;
 
-export const EquipmentList = ({ items }) => {
+const EQUIPMENT_SKELETON_COUNT = 6;
+
+export const EquipmentList = ({ items, loading = false }) => {
   return (
     <div className={list}>
-      <div className={gallery}>
-        {items.map((item) => (
-          <ProductCard key={item.id} product={item} />
-        ))}
-      </div>
+      {loading ? (
+        <ProductGallerySkeleton count={EQUIPMENT_SKELETON_COUNT} />
+      ) : (
+        <div className={gallery}>
+          {items.map((item) => (
+            <ProductCard key={item.id} product={item} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };
