@@ -3,67 +3,280 @@
     {
       "id": "000",
       "name": "Yamaha MT-07 ABS",
-      "price": "$1.350.000",
+      "price": "USD 15.300",
       "image": "/assets/yamaha_mt07.jpg",
-      "description": "Motos naked con motor de 689 cc, diseño ágil y respuesta deportiva ideal para ciudad y ruta."
+      "description": "Motocicleta Hyper Naked con el legendario motor CP2 bicilíndrico de 689 cc. Ofrece un diseño agresivo, acelerador controlado por chip, frenos ABS de alto rendimiento y pantalla TFT de 5”. Equilibrio perfecto entre agilidad urbana y potencia en ruta.",
+      "specs": {
+        "engine": "Bicilíndrico en línea, 4 tiempos, DOHC, 4 válvulas por cilindro",
+        "displacement": "689 cc",
+        "power": "73.4 HP a 8.750 rpm",
+        "torque": "67 Nm a 6.500 rpm",
+        "transmission": "6 velocidades",
+        "fuel_capacity": "14 litros",
+        "weight": "184 kg (en orden de marcha)"
+      }
     },
     {
       "id": "001",
       "name": "KTM 390 Duke",
-      "price": "$2.490.000",
+      "price": "$13.999.000",
       "image": "/assets/KTM_390.jpg",
-      "description": "Compacta y ligera, con banca de 373 cc, excelente para quienes buscan precisión en curvas y performance ágil."
+      "description": "La reina del asfalto urbano. Cuenta con un motor monocilíndrico de 373 cc, chasis multitubular ligero y suspensión WP APEX. Destaca por su agilidad extrema en curvas, frenos ByBre con ABS de doble canal (modo Supermoto) y una entrega de potencia emocionante.",
+      "specs": {
+        "engine": "Monocilíndrico, 4 tiempos, DOHC, 4 válvulas",
+        "displacement": "373 cc",
+        "power": "43 HP a 9.000 rpm",
+        "torque": "37 Nm a 7.000 rpm",
+        "transmission": "6 velocidades con embrague antirrebote",
+        "fuel_capacity": "13.4 litros",
+        "weight": "150 kg (seco)"
+      }
     },
     {
       "id": "002",
-      "name": "Bajaj Dominar 400",
-      "price": "$1.090.000",
+      "name": "Bajaj Dominar 400 Tourer",
+      "price": "$8.460.000",
       "image": "/assets/dominar_400.jpg",
-      "description": "Deportivo touring de 373 cc con buena autonomía, posición de manejo cómoda y estilo de ruta moderna."
+      "description": "Sport Tourer definitiva para viajes largos y uso diario. Equipada con motor DOHC con tecnología DTS-i de triple bujía. Incluye accesorios de fábrica como parabrisas alto, defensas de motor, soporte para equipaje y puerto USB.",
+      "specs": {
+        "engine": "Monocilíndrico, 4 tiempos, DOHC, 4 válvulas, DTS-i, refrigeración líquida",
+        "displacement": "373.3 cc",
+        "power": "40 HP a 8.850 rpm",
+        "torque": "35 Nm a 6.500 rpm",
+        "transmission": "6 velocidades con embrague antirrebote",
+        "fuel_capacity": "13 litros",
+        "weight": "187 kg (en orden de marcha)"
+      }
+    },
+    {
+      "id": "003",
+      "name": "Honda Wave 110S CD",
+      "price": "$2.850.000",
+      "image": "/assets/honda_wave_110.jpg",
+      "description": "La moto más vendida de Argentina. Su indiscutible confiabilidad, bajísimo consumo de combustible y excelente valor de reventa la convierten en la opción urbana por excelencia. Cuenta con freno de disco delantero en esta versión.",
+      "specs": {
+        "engine": "Monocilíndrico, 4 tiempos, OHC, refrigerado por aire",
+        "displacement": "109.1 cc",
+        "power": "9.3 HP a 7.500 rpm",
+        "torque": "8.8 Nm a 5.500 rpm",
+        "transmission": "Semiautomática de 4 velocidades",
+        "fuel_capacity": "3.7 litros",
+        "weight": "101 kg (seco)"
+      }
+    },
+    {
+      "id": "004",
+      "name": "Bajaj Rouser NS 200 FI ABS",
+      "price": "$4.998.000",
+      "image": "/assets/rouser_ns200.jpg",
+      "description": "Referente absoluto del segmento street de 200 cc. Equipada con inyección electrónica, refrigeración líquida y frenos ABS delanteros. Su estética agresiva y excelente relación precio-calidad la hacen la favorita de los conductores urbanos.",
+      "specs": {
+        "engine": "Monocilíndrico, 4 tiempos, SOHC, 4 válvulas, triple bujía DTS-i",
+        "displacement": "199.5 cc",
+        "power": "24.1 HP a 9.750 rpm",
+        "torque": "18.3 Nm a 8.000 rpm",
+        "transmission": "6 velocidades",
+        "fuel_capacity": "12 litros",
+        "weight": "155 kg (en orden de marcha)"
+      }
+    },
+    {
+      "id": "005",
+      "name": "Honda CB300F Twister",
+      "price": "$8.150.000",
+      "image": "/assets/honda_cb300f.jpg",
+      "description": "Evolución total de la línea Twister. Destaca por su diseño aerodinámico Naked Sport, iluminación full LED, embrague antirrebote y control de tracción HSTC seleccionable. Ideal para combinar agilidad diaria con escapadas de fin de semana.",
+      "specs": {
+        "engine": "Monocilíndrico, 4 tiempos, 4 válvulas, radiador de aceite, PGM-FI",
+        "displacement": "293.5 cc",
+        "power": "24.1 HP a 7.500 rpm",
+        "torque": "25.6 Nm a 5.500 rpm",
+        "transmission": "6 velocidades con embrague asistido/antirrebote",
+        "fuel_capacity": "14.1 litros",
+        "weight": "151 kg (seco)"
+      }
+    },
+    {
+      "id": "006",
+      "name": "Yamaha FZ FI V4.0 ABS",
+      "price": "$5.499.000",
+      "image": "/assets/yamaha_fz_v4.jpg",
+      "description": "La renovación del icono street de baja cilindrada. La versión 4.0 incorpora freno de disco trasero, ABS monocanal delantero, control de tracción (TCS), nuevo faro LED y conectividad con la app Y-Connect para diagnóstico y rendimiento.",
+      "specs": {
+        "engine": "Monocilíndrico, 4 tiempos, SOHC, Blue Core, refrigerado por aire",
+        "displacement": "149 cc",
+        "power": "12.4 HP a 7.250 rpm",
+        "torque": "13.3 Nm a 5.500 rpm",
+        "transmission": "5 velocidades",
+        "fuel_capacity": "13 litros",
+        "weight": "136 kg (en orden de marcha)"
+      }
+    },
+    {
+      "id": "007",
+      "name": "Gilera Smash 110 Full",
+      "price": "$1.920.000",
+      "image": "/assets/gilera_smash_110.jpg",
+      "description": "Un clásico del mercado nacional en el segmento CUB. Su accesibilidad mecánica y versatilidad la vuelven ideal para el trabajo diario o primer medio de transporte. La versión Full incluye llantas de aleación y freno de disco delantero.",
+      "specs": {
+        "engine": "Monocilíndrico, 4 tiempos, refrigerado por aire",
+        "displacement": "107 cc",
+        "power": "7.2 HP a 7.000 rpm",
+        "torque": "7.5 Nm a 5.500 rpm",
+        "transmission": "Semiautomática de 4 velocidades",
+        "fuel_capacity": "4.1 litros",
+        "weight": "92 kg (seco)"
+      }
+    },
+    {
+      "id": "008",
+      "name": "Honda XR300L Tornado",
+      "price": "$9.990.000",
+      "image": "/assets/honda_xr300l.jpg",
+      "description": "La leyenda del On/Off renovada con mayor cilindrada, inyección electrónica y frenos ABS en ambas ruedas. Mantiene su indestructible ciclística apta para todo tipo de terrenos duros, combinada con un motor moderno, eficiente y de excelente torque.",
+      "specs": {
+        "engine": "Monocilíndrico, 4 tiempos, DOHC, refrigeración líquida",
+        "displacement": "293 cc",
+        "power": "26 HP a 7.500 rpm",
+        "torque": "26.5 Nm a 5.750 rpm",
+        "transmission": "6 velocidades",
+        "fuel_capacity": "13.8 litros",
+        "weight": "148 kg (seco)"
+      }
+    },
+    {
+      "id": "009",
+      "name": "Benelli 302S",
+      "price": "$9.400.000",
+      "image": "/assets/benelli_302s.jpg",
+      "description": "Naked bicilíndrica reconocida mundialmente por el espectacular sonido de su escape de fábrica. Cuenta con horquilla invertida delantera, doble freno de disco lobulado con ABS y un tablero digital completo. Diseño italiano deportivo y robusto.",
+      "specs": {
+        "engine": "Bicilíndrico en línea, 4 tiempos, DOHC, 4 válvulas por cilindro",
+        "displacement": "300 cc",
+        "power": "38 HP a 11.000 rpm",
+        "torque": "25.6 Nm a 9.750 rpm",
+        "transmission": "6 velocidades",
+        "fuel_capacity": "16 litros",
+        "weight": "185 kg (seco)"
+      }
+    },
+    {
+      "id": "010",
+      "name": "Voge 300DS",
+      "price": "$7.950.000",
+      "image": "/assets/voge_300ds.jpg",
+      "description": "Una de las opciones Adventure/Touring de entrada más competitivas del mercado. Incluye de serie defensas laterales, parabrisas regulable, iluminación Full LED, puerto USB y preinstalación para valijas laterales. Ideal para iniciarse en viajes de larga distancia.",
+      "specs": {
+        "engine": "Monocilíndrico, 4 tiempos, DOHC, 4 válvulas, refrigeración líquida",
+        "displacement": "292 cc",
+        "power": "25.8 HP a 8.500 rpm",
+        "torque": "25 Nm a 7.000 rpm",
+        "transmission": "6 velocidades",
+        "fuel_capacity": "16 litros",
+        "weight": "155 kg (seco)"
+      }
+    },
+    {
+      "id": "011",
+      "name": "Kawasaki Ninja 400 ABS",
+      "price": "USD 12.500",
+      "image": "/assets/kawasaki_ninja400.jpg",
+      "description": "Referente definitivo del segmento deportivo de media cilindrada. Chasis multitubular inspirado en la mítica H2, embrague asistido antirrebote y una entrega de potencia lineal pero agresiva que destaca tanto en pista como en autopistas.",
+      "specs": {
+        "engine": "Bicilíndrico en línea, 4 tiempos, DOHC, refrigeración líquida",
+        "displacement": "399 cc",
+        "power": "49 HP a 10.000 rpm",
+        "torque": "38 Nm a 8.000 rpm",
+        "transmission": "6 velocidades",
+        "fuel_capacity": "14 litros",
+        "weight": "168 kg (en orden de marcha)"
+      }
     }
   ],
   "equipment": [
     {
-      "id": "003",
-      "name": "Casco Integral Nexo",
-      "price": "$28.500",
-      "image": "/assets/casco_integral_nexo.jpg",
-      "description": "Casco integral con ventilación avanzada, visor antirrayado y diseño aerodinámico para máxima seguridad."
+      "id": "012",
+      "name": "Casco Integral Nexx SX.100",
+      "price": "$267.500",
+      "image": "/assets/casco_integral_nexx.jpg",
+      "description": "Casco integral de alta gama fabricado en termoplástico ligero. Cuenta con un amplio campo visual, gafa solar interna desplegable, sistema de ventilación avanzada Air Dynamic System y calota optimizada para reducir la resistencia aerodinámica."
     },
     {
-      "id": "004",
-      "name": "Guantes de cuero",
-      "price": "$9.200",
+      "id": "013",
+      "name": "Guantes de cuero con protección",
+      "price": "$45.000",
       "image": "/assets/guantes_cuero_moto.jpg",
-      "description": "Guantes de cuero reforzado con protecciones en nudillos y palma antideslizante para confort en ruta."
+      "description": "Guantes de cuero genuino reforzado con protecciones rígidas en nudillos y refuerzos de palma antideslizante. Diseñados para ofrecer un óptimo tacto al acelerador, resistencia a la abrasión y confort térmico en trayectos urbanos y rutas."
     },
     {
-      "id": "005",
-      "name": "Campera moto impermeable",
-      "price": "$42.000",
+      "id": "014",
+      "name": "Campera de moto impermeable con protecciones",
+      "price": "$185.000",
       "image": "/assets/campera_moto_impermeable.jpg",
-      "description": "Chaqueta técnica con membrana impermeable, protecciones internas y costuras selladas para clima variable."
+      "description": "Chaqueta técnica confeccionada en cordura de alta resistencia con membrana 100% impermeable y abrigo térmico desmontable. Incluye protecciones homologadas CE en hombros, codos y espalda, junto con paneles reflectantes para conducción nocturna."
     },
     {
-      "id": "006",
-      "name": "Candado de disco",
-      "price": "$6.800",
-      "image": "/assets/Candado_para_Disco.jpg",
-      "description": "Candado de disco resistente y compacto, con cuerpo endurecido y llave de seguridad para protección urbana."
+      "id": "015",
+      "name": "Candado de disco de freno con alarma",
+      "price": "$38.000",
+      "image": "/assets/candado_disco_alarma.jpg",
+      "description": "Sistema de seguridad urbana activa con perno de acero endurecido de 6 mm resistente a cortes. Incorpora un sensor de movimiento con alarma sonora de 110 dB que se activa ante cualquier intento de manipulación o forzado de la moto."
     },
     {
-      "id": "007",
-      "name": "Soporte móvil para celular",
-      "price": "$3.400",
-      "image": "/assets/soporte_movil.jpg",
-      "description": "Soporte ajustable con sujeción segura y rotación 360°, perfecto para usar GPS durante los viajes."
+      "id": "016",
+      "name": "Soporte de celular de aluminio para moto",
+      "price": "$22.500",
+      "image": "/assets/soporte_movil_aluminio.jpg",
+      "description": "Soporte universal construido íntegramente en aluminio CNC de alta resistencia. Cuenta con un sistema de anclaje mecánico seguro a las cuatro esquinas, rotación de 360° y almohadillas antivibración para proteger el estabilizador de la cámara del smartphone."
     },
     {
-      "id": "008",
-      "name": "Botas de ruta",
-      "price": "$31.000",
+      "id": "017",
+      "name": "Botas de ruta Touring impermeables",
+      "price": "$160.000",
       "image": "/assets/botas_de_ruta.jpg",
-      "description": "Botas de ruta con suela antideslizante, refuerzos laterales y aislamiento para proteger en cualquier clima."
+      "description": "Calzado técnico de caña media-alta diseñado para motoviajeros. Fabricadas con cuero sintético microfibra de alta resistencia, membrana interior impermeable, suela de caucho vulcanizado antideslizante y protecciones rígidas en tobillos, talón y zona de cambios."
+    },
+    {
+      "id": "018",
+      "name": "Casco Rebatible LS2 FF399 Valiant",
+      "price": "$430.000",
+      "image": "/assets/casco_ls2_valiant.jpg",
+      "description": "Casco modular con mentonera abatible en 180 grados, doble homologación P/J (como abierto y cerrado). Calota de KPA liviana y resistente, visor de policarbonato con sistema Pinlock incluido y visor solar interno integrado."
+    },
+    {
+      "id": "019",
+      "name": "Intercomunicador Bluetooth Interphone Ride",
+      "price": "$115.000",
+      "image": "/assets/intercomunicador_interphone.jpg",
+      "description": "Dispositivo Bluetooth para casco individual o piloto-pasajero. Permite recibir llamadas, escuchar instrucciones de GPS por voz y reproducir música en alta fidelidad. Cuenta con resistencia al agua IP67 y cancelación activa de ruido ambiental por viento."
+    },
+    {
+      "id": "020",
+      "name": "Pantalón de Cordura MAC Protech",
+      "price": "$142.000",
+      "image": "/assets/pantalon_cordura_mac.jpg",
+      "description": "Pantalón técnico para motociclista con protecciones homologadas desmontables en rodillas y caderas. Confeccionado en tejido resistente a la fricción, forro térmico interno removible y ventilaciones regulables mediante cierres estancos."
+    },
+    {
+      "id": "021",
+      "name": "Funda Cobertora Impermeable Premium",
+      "price": "$29.000",
+      "image": "/assets/funda_cobertora_moto.jpg",
+      "description": "Funda protectora talle universal para motos urbanas y touring. Fabricada en tela Oxford con costuras reforzadas termoselladas, protección UV contra decoloración solar, felpa interior antirrayaduras y ojales de seguridad metálicos para pasar cadena."
+    },
+    {
+      "id": "022",
+      "name": "Kit Sellador de cubiertas Inflable Slime",
+      "price": "$18.500",
+      "image": "/assets/kit_slime_antipinchaduras.jpg",
+      "description": "Solución de emergencia antipinchaduras para neumáticos sin cámara (tubeless). Repara instantáneamente pinchazos en la banda de rodamiento de hasta 6 mm utilizando tecnología de microfibras Fibro-Seal. Seguro para usar con sensores de presión de neumáticos."
+    },
+    {
+      "id": "023",
+      "name": "Espejos Retrovisores tipo Bar End",
+      "price": "$24.000",
+      "image": "/assets/espejos_bar_end.jpg",
+      "description": "Par de espejos retrovisores universales para extremos de manillar (22 mm). Fabricados en aluminio anodizado negro con cristal azul antirreflejo convexo que amplía el campo visual, aportando un estilo Cafe Racer o Naked personalizado."
     }
   ]
 }
